@@ -1,6 +1,8 @@
 # OSX OgreMake
 
-[Ogre3D](http://www.ogre3d.org/) is an extraordinary multi-platform rendering engine that focuses on simplicity and flexibility - so why is it always tied to (in my opinion) clunky IDEs?
+[OGRE3D](http://www.ogre3d.org/) is an extraordinary multi-platform rendering engine that focuses on simplicity and flexibility - so why is it always tied to (in my opinion) clunky IDEs?
+
+Configuring and getting started with OGRE is extremely simple on other platforms such as Windows but the configuration process in XCode has become an annoyance (and now uneccessary). As a Vim fanatic I much prefer plain text editing and so with that I present a Makefile for building OGRE applications quickly and easily with minimal effort, just add your source files and you're ready to go (but please read the rest of this README).
 
 ## Prerequisites
 
@@ -33,7 +35,7 @@ chdir(workingDir.c_str());
 
 This will work with the [OGRE Wiki Tutorial Framework](http://www.ogre3d.org/tikiwiki/tiki-index.php?page=Ogre+Wiki+Tutorial+Framework) as per the edits above (more info in the manual configuration for XCode article).
 
-Simply call ```make all``` to make the app in the current directory.
+Simply call ```make all``` to build the app in the current directory.
 
 ## References
 [Manually Configure an Xcode 4 Project @ Ogre3D Wiki](http://www.ogre3d.org/tikiwiki/tiki-index.php?page=Manually+configure+an+Xcode+4+project)
