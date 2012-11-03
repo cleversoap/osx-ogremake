@@ -16,6 +16,8 @@ Make sure this is installed to __/Library/Frameworks__ although you can edit the
 I used the g++ (4.2.1) provided by [XCode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12) however there is no reason why you can't use the one provided by [Homebrew](http://mxcl.github.com/homebrew/). If you do choose to use XCode then please install the Command Line Tools package.
 
 ## Notes
+__There is a _SRCS_ variable in the Makefile. This is where you will put your source files for compilation. Simple add on to the _INCS_ variable if you have any additional header directories.__
+
 The XCode 4 manual on the OGRE wiki explains this more fully but OGRE requires some additional work to get running on OSX.
 
 ```c++
