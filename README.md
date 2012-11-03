@@ -10,10 +10,10 @@ This Makefile was created on OSX 10.8 but as the requirements for OGRE on OSX ar
 The standard location for this is in __/Developer/SDKs/OgreSDK__ however you can just change _$OGRE_HOME_ in the Makefile to wherever you extracted it.
 
 ### [NVIDIA Cg Toolkit](http://developer.download.nvidia.com/cg/Cg_3.1/Cg-3.1_April2012.dmg)
-Make sure this is installed to __/Library/Frameworks__ although you can edit the Makefile to point wherever you want to put it.
+The standard location for this is in __/Library/Frameworks__
 
 ### G++
-I used the g++ (4.2.1) provided by [XCode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12) however there is no reason why you can't use the one provided by [Homebrew](http://mxcl.github.com/homebrew/). If you do choose to use XCode then please install the Command Line Tools package.
+I used the g++ (4.2.1) provided by [XCode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12) however there is no reason why you can't use the one provided by [Homebrew](http://mxcl.github.com/homebrew/). If you do choose to use XCode then please install the Command Line Tools package. Please check if there are any changes for framework and library linking for your compiler.
 
 ## Notes
 __There is a _SRCS_ variable in the Makefile. This is where you will put your source files for compilation. Simple add on to the _INCS_ variable if you have any additional header directories.__
@@ -22,6 +22,13 @@ The XCode 4 manual on the OGRE wiki explains this more fully but OGRE requires s
 
 ```c++
 #include <macUtils.h>
+```
+
+Add then add this to the top of your main function:
+
+```c++
+Ogre::String workingDir = Ogre::macBundlePath()+"/Contents/Resources";
+chdir(workingDir.c_str());
 ```
 
 ## References
