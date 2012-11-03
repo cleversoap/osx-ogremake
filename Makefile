@@ -1,5 +1,5 @@
-# Compiler
-CXX    = g++
+# Compiler (tested on g++ 4.2 from XCode command line utils)
+CXX = g++
 
 # IMPORTANT: The architecture must be i386 otherwise
 # carbon will not be available and the OIS input will
