@@ -31,5 +31,9 @@ Ogre::String workingDir = Ogre::macBundlePath()+"/Contents/Resources";
 chdir(workingDir.c_str());
 ```
 
+This will work with the [OGRE Wiki Tutorial Framework](http://www.ogre3d.org/tikiwiki/tiki-index.php?page=Ogre+Wiki+Tutorial+Framework) as per the edits above (more info in the manual configuration for XCode article).
+
+Simply call ```make all``` to make the app in the current directory.
+
 ## References
 [Manually Configure an Xcode 4 Project @ Ogre3D Wiki](http://www.ogre3d.org/tikiwiki/tiki-index.php?page=Manually+configure+an+Xcode+4+project)
